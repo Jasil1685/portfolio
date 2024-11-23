@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER MAN</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="shortcut icon" href="superman logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Tq02b1qmvJ71OHqvi",
+      });
+   })();
+</script>
+  
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <a href="#home-page"><h2>SUPERMAN</h2></a>
+            <div class="navbar-items">
+                <a href="#home-page">HOME</a>
+                <a href="#skill-page">SKILL</a>
+                <a href="#about-page">ABOUT</a>
+                <a href="#contact-page">CONTACT</a>
+            </div>
+        </div>
+
+         <div id="home-page">
+            <div class="home-page-image"></div>
+            <div class="home-page-content">
+                <h1>SUPERMAN</h1>
+                <p>Superman is a superhero who appears in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938).[1] Superman has been adapted to several other media including radio serials, novels, films, television shows, theater, and video games.</p>
+                <div class="social-media">
+                    <a href="">
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-whatsapp-square'></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-firefox'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="skill-page">
+            <h1 class="skill-page-head">Skills</h1>
+            <div class="skill-page-content">
+            <div class="skill-sub">
+                <h2>Super Strength</h2>
+                <p>The character was depicted as having the ability to move large vehicles, including cars, trains, and ships. Later on he was depicted jumping incredible heights holding cars, even before learning to fly.</p>
+            </div>
+            <div class="skill-sub">
+                <h2>Enhanced Leaping</h2>
+                <p> could leap over an 8th of a mile or over a tall building. Later on he learned how to fly, first by maneuvering in mid-air and later on by completely countering gravity.</p>
+            </div>
+            <div class="skill-sub">
+                <h2>Mind Abilities</h2>
+                <p>: though originally taking a simple and forceful approach to most problems in early stories, Superman's mind has just as much potential as his body in terms of abilities. He was capable of creating new materials for indestructible clothes which he used to make his uniform. He could memorize things with photographic accuracy and his mind and eyes could resist numbing substances even when the rest of his body caved in.</p>
+            </div>
+        </div>
+        </div>
+
+
+    
+    <div id="about-page">
+        <h1 class="about-page-head">About Me</h1>
+        <div class="about-page-content">
+            <p>Since 1938, Superman stories have been regularly published in periodical comic books published by DC Comics. The first and oldest of these is Action Comics, which began in April 1938.[1] Action Comics was initially an anthology magazine, but it eventually became dedicated to Superman stories. The second oldest periodical is Superman, which began in June 1939. Action Comics and Superman have been published without interruption (ignoring changes to the title and numbering scheme).[71][72] Several other shorter-lived Superman periodicals have been published over the years.[73] Superman is part of the DC Universe, which is a shared setting of superhero characters owned by DC Comics, and consequently he frequently appears in stories alongside the likes of Batman, Wonder Woman, and others.</p>
+            <img src="Man of Steel_ A ShadowSphere Review.jpeg" alt="My Image" class="image">
+        </div>
+    </div>
+
+    
+    <div id="contact-page">
+        <h1 class="contact-page-head" >GET IN TOUCH</h1>
+        <div class="contact-page-content">
+            <input type="text" placeholder="Name" id="name" class="contact-input">
+            <input type="email" placeholder="Email" id="email" class="contact-input">
+            <!-- <input type="number" placeholder="contact number" id="number" class="contact-input"> -->
+            <textarea placeholder="Text Message" id="message" class="contact-input"></textarea>
+            <button id="submit-btn" onclick="sendMail()">Send Message</button>
+        </div>
+    </div>
+</body>
+</html>
